@@ -25,6 +25,7 @@ library
       Application
       Foundation
       Handler.Common
+      Handler.Noticia
       Import
       Import.NoFoundation
       Model
