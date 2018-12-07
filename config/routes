@@ -4,3 +4,4 @@
 /robots.txt RobotsR GET
 
 /noticias               ListaNoticiaR   GET
+/noticia                NoticiaR        POST
