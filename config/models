@@ -1,0 +1,6 @@
+Noticia json
+    titulo    Text
+    subtitulo Text
+    conteudo  Text
+    imagem    Text
+    deriving  Show
