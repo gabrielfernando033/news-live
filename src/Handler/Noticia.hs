@@ -20,3 +20,9 @@ postNoticiaR = do
     noticia <- requireJsonBody :: Handler Noticia
     noticiaid <- runDB $ insert noticia
     sendStatusJSON created201 (object ["noticia" .= noticia])
+    
+-- Buscar noticia
+getBuscarNoticiaR :: Text -> Handler TypedContent
+getBuscarNoticiaR nome = do 
+    noticia <- runDB $ selectList [Filter NoticiaTitulo (Left $ concat ["%", nome, "%"]) (BackendSpecificFilter "ILIKE")] []
+    sendStatusJSON ok200 (object ["resultado" .= noticia])

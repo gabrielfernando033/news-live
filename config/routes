@@ -5,3 +5,4 @@
 
 /noticias               ListaNoticiaR   GET
 /noticia                NoticiaR        POST
+/buscar/#Text           BuscarNoticiaR  GET
