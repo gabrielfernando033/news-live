@@ -26,6 +26,7 @@ library
       Foundation
       Handler.Common
       Handler.Noticia
+      Handler.Categoria
       Import
       Import.NoFoundation
       Model

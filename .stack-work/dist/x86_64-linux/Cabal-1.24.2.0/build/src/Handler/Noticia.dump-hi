@@ -1,18 +1,20 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-07 18:31:15.499068 UTC
+2018-12-09 16:41:19.693366 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Noticia 8002
-  interface hash: d415cf445b21829ea2e95c537fc764a0
-  ABI hash: 8f55f5a6f72ded8d40503e1173b1cbee
-  export-list hash: 4e5355baaeed58c93eb10eecc058b7a5
+  interface hash: a75319cc637a0dd2e5b95073e2fcf8e7
+  ABI hash: afb5753565614eef2e91a2fcdaddc8c5
+  export-list hash: 2c526f34d5e1637476f69714f7e477e6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
   sig of: Nothing
   used TH splices: False
   where
 exports:
+  Handler.Noticia.getBuscarNoticiaR
   Handler.Noticia.getListaNoticiaR
+  Handler.Noticia.postNoticiaR
 module dependencies: Foundation Import Import.NoFoundation Model
                      Settings Settings.StaticFiles
 package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
@@ -342,18 +344,36 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 4cfa11f8e05d7c3941edd422c39e8ea2
-  Handler 0bdb580a1dfc7a49145daca18c75fc87
-import  -/  Import c6301f4894060993dc5f9898984c74bb
-  exports: 64572094246ef7f64b75ca7339a56aed
-import  -/  Model 4541b358106aa5205217ca6024958ac5
-  NoticiaId e2eb4128a50cb76c28463c2da1a6b01e
+import  -/  Foundation 72867928f6e0915947af66f31fa533f2
+  Handler ffe34dc4a3093deb06e5acabfeddc47c
+import  -/  Import f95bb7946f1547055a588f29f689e126
+  exports: 0212f6b6c47c2ddf1259c4e16861bb5b
+import  -/  Model 9477079a67778dd8192db77a84bb49d4
+  Noticia dae0a82bce0f547c5104347cdf2fd903
+  NoticiaId 002dc9b4647c744575ef5f8022cd85d8
+  NoticiaTitulo 3d39a947e5d90bfd244b16b9295fb12f
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
 import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Status 89141eb12608ef6ae13b4ca925571920
+import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.MonoTraversable.Unprefixed 6a888ca032c93f87665cfd0c6b27c2f4
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b1a81164694b45dd782d2c329cb2cab2
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistQuery f49c24dcd0623057eaedb42271af367b
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistStore cf3035bd99fb071645511275577dc7fe
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Types.Base 8f4313d7fc23a55070756850ba86f3ad
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Handler 5eeae0813494c783beb7f9babd90b06a
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Json a974a49c1b441c1d779a78e641086a29
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
 import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc:Yesod.Persist.Core e6c69656dbdff229818a75455816a39b
+5f6529126a5c7b02384db335de859908
+  $s$WNoticiaTitulo2 ::
+    Data.Text.Internal.Text GHC.Types.~~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
 14bc75afb82ca413975368f3f0bd6f75
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -369,7 +389,162 @@ cb0f4c4d7fb33a5bb42291653502a87e
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-c149c293377a6d540dfdb8bc7f9372d0
+688473811a3c6c16d5c66f587ff905bf
+  $wpostNoticiaR ::
+    Yesod.Core.Types.YesodRequest
+    -> Yesod.Core.Types.RunHandlerEnv Foundation.App
+    -> GHC.Prim.MutVar# GHC.Prim.RealWorld Yesod.Core.Types.GHState
+    -> (Yesod.Routes.Class.Route Foundation.App
+        -> Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.MutVar#
+         GHC.Prim.RealWorld Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Yesod.Core.Types.TypedContent #)
+  {- Arity: 6, Strictness: <S,U><S,U><S,U><S,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Yesod.Core.Types.YesodRequest)
+                   (ww1 :: Yesod.Core.Types.RunHandlerEnv Foundation.App)
+                   (ww2 :: GHC.Prim.MutVar#
+                             GHC.Prim.RealWorld Yesod.Core.Types.GHState)
+                   (ww3 :: Yesod.Routes.Class.Route Foundation.App
+                           -> Yesod.Core.Types.MonadRoute GHC.Types.IO)
+                   (ww4 :: GHC.Prim.MutVar#
+                             GHC.Prim.RealWorld
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ Yesod.Core.Types.GHState
+                        ww2
+                        w of ds4 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ Yesod.Core.Types.GHState
+                        ww2
+                        (case ipv1 of wild1 { Yesod.Core.Types.GHState ds ds5 ds6 ds7 ds8 ds9 ->
+                         Yesod.Core.Types.GHState
+                           ds
+                           ds5
+                           ds6
+                           ds7
+                           ds8
+                           (\ (eta2 :: [Yesod.Core.Types.Header]) ->
+                            ds9 `cast` (Data.Monoid.N:Endo[0] <[Yesod.Core.Types.Header]>_R)
+                              (GHC.Types.:
+                                 @ Yesod.Core.Types.Header
+                                 Handler.Noticia.postNoticiaR_eta
+                                 eta2))
+                             `cast`
+                           (Sym (Data.Monoid.N:Endo[0] <[Yesod.Core.Types.Header]>_R)) })
+                        ipv of s2# { DEFAULT ->
+                 let {
+                   wild :: Yesod.Core.Types.HandlerData
+                             (Yesod.Core.Class.Handler.HandlerSite
+                                (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))
+                             ()
+                   = Yesod.Core.Types.HandlerData
+                       @ (Yesod.Core.Class.Handler.HandlerSite
+                            (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))
+                       @ ()
+                       ww
+                       ww1
+                         `cast`
+                       (Yesod.Core.Types.RunHandlerEnv
+                          (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
+                                    <GHC.Types.IO>_N <Foundation.App>_N)))_R
+                       ww2
+                       ww3
+                         `cast`
+                       ((Yesod.Routes.Class.Route
+                           (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
+                                     <GHC.Types.IO>_N <Foundation.App>_N)))_R
+                        ->_R Sub (Yesod.Core.Types.D:R:MonadRouteIO[0]))
+                       ww4
+                 } in
+                 case (Handler.Noticia.postNoticiaR_ds
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.App>_N <GHC.Types.IO>_N <Model.Noticia>_N)
+                         wild
+                           `cast`
+                         (Yesod.Core.Types.HandlerData
+                            (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
+                                 <GHC.Types.IO>_N <Foundation.App>_N)
+                            (Sub (Sym (Yesod.Core.Types.D:R:MonadRouteIO[0]))))_R)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Model.Noticia>_R)
+                        s2# of ds1 { (#,#) ipv2 ipv3 ->
+                 case Foundation.$fYesodPersistApp1
+                        @ (Database.Persist.Class.PersistEntity.Key Model.Noticia)
+                        (Handler.Noticia.postNoticiaR3 ipv3)
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <Database.Persist.Class.PersistEntity.Key Model.Noticia>_N)_R
+                        wild
+                          `cast`
+                        (Yesod.Core.Types.HandlerData
+                           (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
+                                <GHC.Types.IO>_N <Foundation.App>_N)
+                           (Sub (Sym (Yesod.Core.Types.D:R:MonadRouteIO[0]))))_R
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Yesod.Core.Types.TypedContent
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv6 ipv7 ipv8 ipv9 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Handler.Noticia.postNoticiaR2,
+                                  Model.$fToJSONNoticia_$ctoJSON ipv3)
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status201
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv4 } } } }) -}
+dfcb2d2d3b4ae61153954179667d68f4
+  getBuscarNoticiaR ::
+    Data.Text.Internal.Text
+    -> Foundation.Handler Yesod.Core.Types.TypedContent
+  {- Arity: 3, Strictness: <L,1*U(U,U,U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handler.Noticia.getBuscarNoticiaR1
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Yesod.Core.Types.TypedContent>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Yesod.Core.Types.TypedContent>_N))) -}
+87a4a3e852ceffc91d456b3d0903dfb8
+  getBuscarNoticiaR1 ::
+    Data.Text.Internal.Text
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Yesod.Core.Types.TypedContent #)
+  {- Arity: 3, Strictness: <L,1*U(U,U,U)><L,U><S,U> -}
+e52f7324defdb021dc15b786225bd747
   getListaNoticiaR ::
     Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,U><S,U>,
@@ -384,7 +559,7 @@ c149c293377a6d540dfdb8bc7f9372d0
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-0025a458872c6231afb562c1cd56deed
+4dc9e13e5ec9a598947cb27cc4b37f62
   getListaNoticiaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -442,7 +617,7 @@ c149c293377a6d540dfdb8bc7f9372d0
                                                     @ (Database.Persist.Class.PersistEntity.Entity
                                                          Model.Noticia)
                                                     @ Data.Aeson.Types.Internal.Value
-                                                    Model.$fToJSONEntity_$ctoJSON
+                                                    Model.$fToJSONEntity0_$ctoJSON
                                                     ipv1)
                                                  0#
                                                  0#
@@ -499,7 +674,7 @@ c149c293377a6d540dfdb8bc7f9372d0
 7488bb3cf9819cea813e3ae09f667ecb
   getListaNoticiaR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "noticias"#) -}
-12461102c062c1ded7a429996a1af56c
+3a58ace1162aad326f820693637aa053
   getListaNoticiaR3 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -580,7 +755,7 @@ c149c293377a6d540dfdb8bc7f9372d0
                                 <GHC.Types.IO>_N
                                 <[Database.Persist.Class.PersistEntity.Entity
                                     Model.Noticia]>_N)))) -}
-485f3292a535973925e932d5c6db6d67
+060218dbebc190f4e389c5ab426c9ac9
   getListaNoticiaR4 ::
     [Database.Persist.Class.PersistEntity.SelectOpt Model.Noticia]
   {- Unfolding: (GHC.Types.:
@@ -589,28 +764,29 @@ c149c293377a6d540dfdb8bc7f9372d0
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.SelectOpt
                            Model.Noticia))) -}
-e0baa66c1f1e298553a6f4df0c614e21
+d3035058f85a95ece0520e0689d8a349
   getListaNoticiaR5 ::
     Database.Persist.Class.PersistEntity.SelectOpt Model.Noticia
   {- Unfolding: (Database.Persist.Class.PersistEntity.Desc
                    @ Model.Noticia
                    @ (Database.Persist.Class.PersistEntity.Key Model.Noticia)
                    Model.$fPersistEntityNoticia_$s$WNoticiaId) -}
-0f4613d499757c63f70b351a25b86c43
+55eb2bc674df20f20633414a43c27984
   getListaNoticiaR6 ::
     (Database.Persist.Class.PersistEntity.PersistEntity Model.Noticia,
      Database.Persist.Sql.Types.Internal.SqlBackend
      Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
-  {- Unfolding: ((Model.$fPersistEntityNoticia,
+  {- Strictness: m,
+     Unfolding: ((Model.$fPersistEntityNoticia,
                   Handler.Noticia.getListaNoticiaR7
                     `cast`
                   (Sym (Data.Type.Equality.N:~[0]
                             <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
-8096013fa4d1a6c670d68c68b5ddae76
+c704a1641c864aaae6781de094fb3b40
   getListaNoticiaR7 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
-  {- HasNoCafRefs,
+  {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Eq#
                    @ *
                    @ *
@@ -641,7 +817,7 @@ e0baa66c1f1e298553a6f4df0c614e21
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-8e44ea97e028a498156eda1f44756a76
+94dc43d00a100829d564f289d40ad680
   getListaNoticiaR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -668,6 +844,83 @@ e0baa66c1f1e298553a6f4df0c614e21
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Noticia))
                    Handler.Noticia.getListaNoticiaR4) -}
+f01f26d8e8b06808ca90a943c42ba47d
+  postNoticiaR :: Foundation.Handler Yesod.Core.Types.TypedContent
+  {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handler.Noticia.postNoticiaR1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <Yesod.Core.Types.TypedContent>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.App>_N
+                               <GHC.Types.IO>_N
+                               <Yesod.Core.Types.TypedContent>_N))) -}
+52cf858ffd4e2a62530db071f61d2612
+  postNoticiaR1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Yesod.Core.Types.TypedContent #)
+  {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Yesod.Core.Types.HandlerData ww1 ww2 ww3 ww4 ww5 ->
+                 Handler.Noticia.$wpostNoticiaR ww1 ww2 ww3 ww4 ww5 w1 }) -}
+90d6b460ee3c8310970d75a2a4b0308e
+  postNoticiaR2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "noticia"#) -}
+08d616feea7dc4bace64cb0734b57f08
+  postNoticiaR3 ::
+    Model.Noticia
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.Internal.SqlBackend
+         (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+         (Database.Persist.Class.PersistEntity.Key Model.Noticia)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cinsert
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Model.Noticia
+                   (Yesod.Auth.$dmgetAuthEntity_$s$fMonadIOHandlerT @ Foundation.App)
+                   Handler.Noticia.getListaNoticiaR6
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistEntity.PersistEntity
+                         Model.Noticia>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Model.D:R:PersistEntityBackendNoticia[0]))
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+fefc462ede73a1da834df2ede77b9a04
+  postNoticiaR4 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
+23b542f061ef257179dc031e295c19e9
+  postNoticiaR_ds ::
+    Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO Model.Noticia
+  {- Unfolding: (Yesod.Core.Json.requireJsonBody
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Model.Noticia
+                   (Yesod.Auth.defaultMaybeAuthId_$s$fMonadHandlerHandlerT
+                      @ Foundation.App)
+                   Model.$fFromJSONNoticia) -}
+e2342c40c8b0801938a976ec675c6697
+  postNoticiaR_eta :: Yesod.Core.Types.Header
+  {- Strictness: m3,
+     Unfolding: (Yesod.Core.Types.Header
+                   Handler.Noticia.postNoticiaR_f
+                   Handler.Noticia.postNoticiaR4) -}
+df373a58de019950a614898c69ef4d4a
+  postNoticiaR_f :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "ACCESS-CONTROL-ALLOW-ORIGIN"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

@@ -3,6 +3,9 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/noticias               ListaNoticiaR   GET
-/noticia                NoticiaR        POST
-/buscar/#Text           BuscarNoticiaR  GET
+/noticias                   ListaNoticiaR      GET
+/noticia                    NoticiaR           POST
+/noticias/buscar/#Text      BuscarNoticiaR     GET
+
+/categorias                 ListaCategoriaR    GET
+/categoria                  CategoriaR         POST
