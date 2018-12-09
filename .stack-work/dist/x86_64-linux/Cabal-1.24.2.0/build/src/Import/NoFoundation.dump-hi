@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-07 20:12:22.302554 UTC
+2018-12-09 17:14:41.56451 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Import.NoFoundation 8002
-  interface hash: 2b6d1ac691fedc4ddfcdeba33a81c586
-  ABI hash: a380df642ed5bed84ad2cc002accc158
-  export-list hash: 0985ded377b2129c45383dd7b18d2fa4
+  interface hash: c7881227ba8ad95bf5f020620ab939bb
+  ABI hash: af83d6cb349877736140a7194ac15e14
+  export-list hash: 04a5e5a68a617fa4c9610f085627bac6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -1517,6 +1517,8 @@ exports:
   Control.Concurrent.Async.Async{asyncThreadId}
   Model.Categoria{Model.Categoria categoriaNome}
   Model.CategoriaId
+  Model.Comentario{Model.Comentario comentarioAutor comentarioConteudo comentarioDataPostagem comentarioNoticiaid}
+  Model.ComentarioId
   Model.Noticia{Model.Noticia noticiaCategoriaid noticiaConteudo noticiaDataPostagem noticiaImagem noticiaSubtitulo noticiaTitulo}
   Model.NoticiaId
   Settings.AppSettings{Settings.AppSettings appAnalytics appAuthDummyLogin appCopyright appDatabaseConf appDetailedRequestLogging appHost appIpFromHeader appMutableStatic appPort appReloadTemplates appRoot appShouldLogAll appSkipCombining appStaticDir}
@@ -1721,9 +1723,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.CategoriaId Model.CategoriaNome Model.NoticiaCategoriaid Model.NoticiaConteudo Model.NoticiaDataPostagem Model.NoticiaId Model.NoticiaImagem Model.NoticiaSubtitulo Model.NoticiaTitulo}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.CategoriaId Model.CategoriaNome Model.ComentarioAutor Model.ComentarioConteudo Model.ComentarioDataPostagem Model.ComentarioId Model.ComentarioNoticiaid Model.NoticiaCategoriaid Model.NoticiaConteudo Model.NoticiaDataPostagem Model.NoticiaId Model.NoticiaImagem Model.NoticiaSubtitulo Model.NoticiaTitulo}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
-  Database.Persist.Class.PersistEntity.Key|{Model.CategoriaKey Model.NoticiaKey unCategoriaKey unNoticiaKey}
+  Database.Persist.Class.PersistEntity.Key|{Model.CategoriaKey Model.ComentarioKey Model.NoticiaKey unCategoriaKey unComentarioKey unNoticiaKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
@@ -2236,35 +2238,49 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Model 9477079a67778dd8192db77a84bb49d4
-  exports: 66027e67853a3cfb1a6be3d7a4efd283
-  Categoria d9fdc4f43bd695bc4f42894786aa69a9
-  Categoria e8678839a8d8aaed477bfe5df2db8649
-  CategoriaId f83f1add3ccb9429ce0d120aa1c8cd90
-  CategoriaId b49dadfeb44a0084404d645b7b80da72
-  CategoriaKey 7e6aa9082f44429ee8e0749e1fa31fd9
-  CategoriaNome 653c23325badc2f0de279f24c078684d
-  Noticia 3835a59caa680f919d65eb3a30f57ea2
-  Noticia dae0a82bce0f547c5104347cdf2fd903
-  NoticiaCategoriaid 74e3377f98c0d462dd0e0a79376d3d0a
-  NoticiaConteudo eae7f6015e187da53dd61af8ca07c983
-  NoticiaDataPostagem 0fc8794c94646a1bcee2f277388e75cb
-  NoticiaId 002dc9b4647c744575ef5f8022cd85d8
-  NoticiaId aa95bef0163ded4adb3c3b5393208669
-  NoticiaImagem 6f146a62458a3e365291cd867fd379cf
-  NoticiaKey b52dc15743149423c8fc22080a60322e
-  NoticiaSubtitulo 8bc81520c91b0cc4a915a04785090c9c
-  NoticiaTitulo 3d39a947e5d90bfd244b16b9295fb12f
-  categoriaNome 958ed89363f7883d1b679361aa6da3ff
-  migrateAll 096d7b0acda1307dec09b53985da9a09
-  noticiaCategoriaid 2c2e7c9288e0b96409b964b47d3224d2
-  noticiaConteudo dff065ac308ab29fb3fef9cc41d81d58
-  noticiaDataPostagem 35e44ece4fc1c70c3b618fba3689d84a
-  noticiaImagem 8647e260bcf31593e3d503c823f78fac
-  noticiaSubtitulo cb6eb7fa6215df2eaf4342cb7beb5895
-  noticiaTitulo dac5eb8927a5fc911e087154ba748a78
-  unCategoriaKey e8678839a8d8aaed477bfe5df2db8649
-  unNoticiaKey dae0a82bce0f547c5104347cdf2fd903
+import  -/  Model 332ff1f40a160edbaeb09c3a5640a383
+  exports: 79c8601b1080715565aeeaf5249cf3fb
+  Categoria 35c369cc44d174e9b611fb518f817e52
+  Categoria 516b555d901121f4b6409f2bfa441e95
+  CategoriaId 70d3e7c29900c925499f27bb0cd7f2c9
+  CategoriaId 47977b8e139c86951b99a6941560a858
+  CategoriaKey 124663f41608af9a5adbdba705d59e71
+  CategoriaNome 9b15eb4e530e23536872995f338570e7
+  Comentario 08574cfce9b623cd5e7503fc0e825341
+  Comentario 88e8f884552fcba0071bf91dd6b81d20
+  ComentarioAutor 0a03f5ece1a42bfbc3fe17bf9c8d89e6
+  ComentarioConteudo 45e5950a0bb0cb3a64775b26a408416e
+  ComentarioDataPostagem b5ceab35a2202c1ab65f3011aaf9e9b0
+  ComentarioId c9de91d6409eefc24811a9d27c5a48db
+  ComentarioId 70c22df9dfd219f3dff9ca3f344254ab
+  ComentarioKey c75fd10cdd1e2ff97de3bfe549ded373
+  ComentarioNoticiaid c8691413fed85a6c45d768e90ac1b454
+  Noticia b4a31a2bf0af5be2f3e7af8e4f177660
+  Noticia 31d0a5824f9d47a6e31cf014488f4581
+  NoticiaCategoriaid 771fe7d063bb1c3be93fc702a207e706
+  NoticiaConteudo ec4ae2212306b3f2342de98426cd6bc6
+  NoticiaDataPostagem 673befe9835db5d2c82515a57bd70cfd
+  NoticiaId 2abe5676191925dbd8fa923a7cf17086
+  NoticiaId b192d8ec08fc3c861e8041ee28eb2f2c
+  NoticiaImagem 988d8a39fe98bd50a83a3b83ae6db1cc
+  NoticiaKey 142fd79f98f1d5154d60b5ada81f9831
+  NoticiaSubtitulo 75f953ec9a6a376fd8764206c51cfc93
+  NoticiaTitulo d39e3ccd54d476bd64dfe4f2b25a3f4c
+  categoriaNome 5cd712ea5d6e84f8443f19b2bc7c8bf0
+  comentarioAutor 1c659bc4b399911d8ca178dbc672fedc
+  comentarioConteudo 7ea20c48ee8a37ff6e78d92b3372ffe4
+  comentarioDataPostagem ba9ef9e38b207a3577b0c8e81ed664aa
+  comentarioNoticiaid bda89b000eae2148c59395668ca639bf
+  migrateAll 766b2bb2a8595f03716178a1b65b2cfe
+  noticiaCategoriaid 265b8649dd4e41c966ea703bc4494baf
+  noticiaConteudo b7b0ee1db9bfed992f2b30229275bf11
+  noticiaDataPostagem b91b518eea507988642e2c485393b2bb
+  noticiaImagem 5f6f6d2fc578ef28fe3ad818d38e587e
+  noticiaSubtitulo b17dc09b8040ee56e5ead2aa0fc208e3
+  noticiaTitulo 35461b551181bab879b66ba8e3d28290
+  unCategoriaKey 516b555d901121f4b6409f2bfa441e95
+  unComentarioKey 88e8f884552fcba0071bf91dd6b81d20
+  unNoticiaKey 31d0a5824f9d47a6e31cf014488f4581
 import  -/  Settings 7b5bc527eeddfc6735cbf82ccfd96eb0
   exports: 1ed8f8a13f069b5ec5b913864838950c
   AppSettings 6e5ba25daa95420f047f78eff308cd25

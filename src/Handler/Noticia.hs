@@ -18,7 +18,7 @@ postNoticiaR :: Handler TypedContent
 postNoticiaR = do 
     addHeader "ACCESS-CONTROL-ALLOW-ORIGIN" "*"
     noticia <- requireJsonBody :: Handler Noticia
-    noticiaid <- runDB $ insert noticia
+    _ <- runDB $ insert noticia
     sendStatusJSON created201 (object ["noticia" .= noticia])
     
 -- Buscar noticia

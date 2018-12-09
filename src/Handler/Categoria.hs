@@ -18,5 +18,5 @@ postCategoriaR :: Handler TypedContent
 postCategoriaR = do 
     addHeader "ACCESS-CONTROL-ALLOW-ORIGIN" "*"
     categoria <- requireJsonBody :: Handler Categoria
-    categoriaid <- runDB $ insert categoria
+    _ <- runDB $ insert categoria
     sendStatusJSON created201 (object ["categoria" .= categoria])
