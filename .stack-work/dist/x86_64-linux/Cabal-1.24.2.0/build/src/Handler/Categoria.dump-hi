@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-09 17:27:02.826793 UTC
+2018-12-09 18:35:26.295597 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Categoria 8002
-  interface hash: 270f944318f638d63cdf205b66689e2a
-  ABI hash: 8d0655f4f3917049812ad48cffd2f983
+  interface hash: def90abe9ec7d5158d65fab6ecac479c
+  ABI hash: 0ebcf276edb9ed015f4881711d198074
   export-list hash: 9b6b4aac8c6f8080c5b6ac87d7472763
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
@@ -343,13 +343,13 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 51de64e9d6881c0da82a30ad60422452
-  Handler eb37dc80aba8140fe806f41e7d3af9fe
-import  -/  Import d5d1bf85652f410914ad02900578c4f5
-  exports: fa72b893233c5495ba458e6f5e5ece03
-import  -/  Model 332ff1f40a160edbaeb09c3a5640a383
-  Categoria 516b555d901121f4b6409f2bfa441e95
-  CategoriaId 70d3e7c29900c925499f27bb0cd7f2c9
+import  -/  Foundation 4cdad0390d651fbede38b75aee97c93e
+  Handler d5d80f763cf666e48167c5a78a3fbbdf
+import  -/  Import 0eb84c48ec8d0327d012f2e23684d1b2
+  exports: 19b85bfa78a307b656ca2c8f6bb53311
+import  -/  Model 16ff8dc1436ef86bb534114909aab486
+  Categoria 9df8f4644e9fda20db422a3dc5d314f8
+  CategoriaId 88ffc1a2d9e542ff37cc538abc5c4c0f
 import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Status 89141eb12608ef6ae13b4ca925571920
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b1a81164694b45dd782d2c329cb2cab2
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistQuery f49c24dcd0623057eaedb42271af367b
@@ -373,7 +373,7 @@ f82fa9b92be13efbaef3174ef6901c4a
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-46b7ebecad71392ddf659e00cdef8c3d
+9a1e889370d13b503fef35599d5c7ffc
   $wpostCategoriaR ::
     Yesod.Core.Types.YesodRequest
     -> Yesod.Core.Types.RunHandlerEnv Foundation.App
@@ -502,7 +502,7 @@ f82fa9b92be13efbaef3174ef6901c4a
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv4 } } } }) -}
-fdec0ff6e8b73fcc558c4f592884c583
+4ffae1b45460abc2771e4ec3d37d0f34
   getListaCategoriaR ::
     Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,U><S,U>,
@@ -517,7 +517,7 @@ fdec0ff6e8b73fcc558c4f592884c583
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-7d07d9fa592f5db91607ad4bb52267d2
+2f7f30caf566057331ff1ccc2d543f78
   getListaCategoriaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -576,7 +576,7 @@ fdec0ff6e8b73fcc558c4f592884c583
                                                     @ (Database.Persist.Class.PersistEntity.Entity
                                                          Model.Categoria)
                                                     @ Data.Aeson.Types.Internal.Value
-                                                    Model.$fToJSONEntity0_$ctoJSON
+                                                    Model.$fToJSONEntity1_$ctoJSON
                                                     ipv1)
                                                  0#
                                                  0#
@@ -633,7 +633,7 @@ fdec0ff6e8b73fcc558c4f592884c583
 41326099faeeb1bb3197a790343d1662
   getListaCategoriaR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "categorias"#) -}
-1e033fda7f878fa24f29d82869c60313
+64ee42f0ebd3a32dae8a895256d34008
   getListaCategoriaR3 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -715,7 +715,7 @@ fdec0ff6e8b73fcc558c4f592884c583
                                 <GHC.Types.IO>_N
                                 <[Database.Persist.Class.PersistEntity.Entity
                                     Model.Categoria]>_N)))) -}
-1447852217425b4fd313bbdcb4261401
+17add6791747431ae8a8adb06a09f2f5
   getListaCategoriaR4 ::
     [Database.Persist.Class.PersistEntity.SelectOpt Model.Categoria]
   {- Unfolding: (GHC.Types.:
@@ -724,14 +724,14 @@ fdec0ff6e8b73fcc558c4f592884c583
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.SelectOpt
                            Model.Categoria))) -}
-cce80d07dae8e17ca35f4a605cb75373
+36ba8a79e67ed4dccc9070d04f01ca18
   getListaCategoriaR5 ::
     Database.Persist.Class.PersistEntity.SelectOpt Model.Categoria
   {- Unfolding: (Database.Persist.Class.PersistEntity.Asc
                    @ Model.Categoria
                    @ (Database.Persist.Class.PersistEntity.Key Model.Categoria)
                    Model.$fPersistEntityCategoria_$s$WCategoriaId) -}
-5c0b966618decece3526bdea5b9eeb19
+0a39ff7e471d70886005eb28d8ddeba1
   getListaCategoriaR6 ::
     (Database.Persist.Class.PersistEntity.PersistEntity
        Model.Categoria,
@@ -778,7 +778,7 @@ c025447afbb7fbf517331cc6636e2463
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-b9467e36c6648e6ae72d6d391dab957a
+2e40a034eb4495aea8b114cf9fb29294
   getListaCategoriaR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -805,7 +805,7 @@ b9467e36c6648e6ae72d6d391dab957a
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Categoria))
                    Handler.Categoria.getListaCategoriaR4) -}
-76aa21c0ac8da432f4c60f1e0553203a
+0446114b9dfbbbbae9c8d01cc0f93a63
   postCategoriaR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -819,7 +819,7 @@ b9467e36c6648e6ae72d6d391dab957a
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-08f433ff19c030ced7d825840098d8ef
+b841656b1471e93d4a3f14ba38943885
   postCategoriaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -837,7 +837,7 @@ b9467e36c6648e6ae72d6d391dab957a
 380f38f61f97075bd7f48d41797c1440
   postCategoriaR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "categoria"#) -}
-2746a963b6b9975e70a417354ccea328
+5b592246f9d9b18ee3c3629f8d819b34
   postCategoriaR3 ::
     Model.Categoria
     -> Control.Monad.Trans.Reader.ReaderT
@@ -862,7 +862,7 @@ be14c76d03474985de9598db5ebe7f1e
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
                  Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
-1375bfae93ab752e8097026adb3a3279
+b126a77ec4a777f4eb9dffbca3360750
   postCategoriaR_ds ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Model.Categoria

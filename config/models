@@ -22,7 +22,7 @@ Evento json
     titulo        Text
     descricao     Text
     dataEvento    Text
-    preco         Float
+    preco         Int
     imagem        Text
     tipo          Text
     deriving Show

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-09 18:02:22.722291 UTC
+2018-12-09 18:35:26.810736 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Comentario 8002
-  interface hash: 100aacb5e5708bb206707f751b7f6023
-  ABI hash: d303f80287272dbd0f4a1845681a70c8
+  interface hash: 88b3416f8116ecc583104ff1c4d90244
+  ABI hash: 31c1408cbec06bf38f83ae97003dbe8c
   export-list hash: af897611bdb33b93e6771062557461fa
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
@@ -343,14 +343,14 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 51de64e9d6881c0da82a30ad60422452
-  Handler eb37dc80aba8140fe806f41e7d3af9fe
-import  -/  Import d5d1bf85652f410914ad02900578c4f5
-  exports: fa72b893233c5495ba458e6f5e5ece03
-import  -/  Model 332ff1f40a160edbaeb09c3a5640a383
-  Comentario 88e8f884552fcba0071bf91dd6b81d20
-  ComentarioNoticiaid c8691413fed85a6c45d768e90ac1b454
-  NoticiaId b192d8ec08fc3c861e8041ee28eb2f2c
+import  -/  Foundation 4cdad0390d651fbede38b75aee97c93e
+  Handler d5d80f763cf666e48167c5a78a3fbbdf
+import  -/  Import 0eb84c48ec8d0327d012f2e23684d1b2
+  exports: 19b85bfa78a307b656ca2c8f6bb53311
+import  -/  Model 16ff8dc1436ef86bb534114909aab486
+  Comentario 015e1887564742222b0a9f76c9b2ab72
+  ComentarioNoticiaid d0dce152a322eb7b61f8107fdb3baea1
+  NoticiaId 57c68001ca7612883174a1a33e2528a1
 import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Status 89141eb12608ef6ae13b4ca925571920
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist 0aff630e744e4e31b8f30afb6ba2be6c
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistQuery f49c24dcd0623057eaedb42271af367b
@@ -359,7 +359,7 @@ import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Cor
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Json a974a49c1b441c1d779a78e641086a29
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
 import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc:Yesod.Persist.Core e6c69656dbdff229818a75455816a39b
-21022f6f63067101a171e7a0894a185e
+0847484f1e7937799242d9a9a44b7dab
   $s$WComentarioNoticiaid2 ::
     Database.Persist.Class.PersistEntity.Key Model.Noticia
     GHC.Types.~~ Database.Persist.Class.PersistEntity.Key Model.Noticia
@@ -385,7 +385,7 @@ f9ecc60c7f4010593c88fcbf5a0e2e47
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-f676254fd78869048bdf01710fed62da
+85fb325095d5c73b683e4f83c4f70d10
   $wpostComentarioR ::
     Yesod.Core.Types.YesodRequest
     -> Yesod.Core.Types.RunHandlerEnv Foundation.App
@@ -514,7 +514,7 @@ f676254fd78869048bdf01710fed62da
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv4 } } } }) -}
-e00ec7788a862af4da0acbd439c64a4e
+c4a5cf2301e16a5d9e898b431bb2467f
   getListaComentarioR ::
     Model.NoticiaId -> Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 3, Strictness: <L,U><L,U><S,U>,
@@ -530,7 +530,7 @@ e00ec7788a862af4da0acbd439c64a4e
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Yesod.Core.Types.TypedContent>_N))) -}
-1eb223c2d0775e0cd3b18746c879c3cb
+3eb08d6eb260752055a82e7e1a96b8b0
   getListaComentarioR1 ::
     Model.NoticiaId
     -> Yesod.Core.Types.HandlerData
@@ -571,7 +571,7 @@ e00ec7788a862af4da0acbd439c64a4e
                           (Database.Persist.Class.PersistEntity.Filter
                              @ Model.Comentario
                              @ Model.NoticiaId
-                             Model.$fPersistFieldKey1
+                             Model.$fPersistFieldKey2
                              Handler.Comentario.getListaComentarioR3
                                `cast`
                              (Sym (Model.D:R:EntityFieldComentariotyp0[0]) <Model.NoticiaId>_N)
@@ -708,7 +708,7 @@ e00ec7788a862af4da0acbd439c64a4e
                                                     @ (Database.Persist.Class.PersistEntity.Entity
                                                          Model.Comentario)
                                                     @ Data.Aeson.Types.Internal.Value
-                                                    Model.$fToJSONEntity_$ctoJSON
+                                                    Model.$fToJSONEntity0_$ctoJSON
                                                     ipv1)
                                                  0#
                                                  0#
@@ -762,10 +762,10 @@ e00ec7788a862af4da0acbd439c64a4e
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv }) -}
-c51139eb994cb4a21c970f93792dcf2e
+08b4cdfc510172bf6b327468b54cf9aa
   getListaComentarioR2 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "resultado"#) -}
-324d79546fa893262518beca468cdbb7
+  {- Unfolding: (Data.Text.Show.unpackCString# "comentarios"#) -}
+922447c3381811eedcbe9e7b46b4561f
   getListaComentarioR3 ::
     Model.R:EntityFieldComentariotyp Model.NoticiaId
   {- HasNoCafRefs, Strictness: m5,
@@ -777,7 +777,7 @@ c51139eb994cb4a21c970f93792dcf2e
                              <*>_N) <Database.Persist.Class.PersistEntity.Key
                                        Model.Noticia>_N <Database.Persist.Class.PersistEntity.Key
                                                            Model.Noticia>_N)) -}
-db3a7f174f6fa72b9f7a12413cbe912c
+e9a80f60093c23a8324b9b48e8c19d02
   getListaComentarioR4 ::
     (Database.Persist.Class.PersistEntity.PersistEntity
        Model.Comentario,
@@ -824,7 +824,7 @@ db3a7f174f6fa72b9f7a12413cbe912c
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-798121e0cc7877710d3961eb0ae0acdf
+9b60f58bd0116ae3447259dc3bce2bbb
   postComentarioR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -838,7 +838,7 @@ db3a7f174f6fa72b9f7a12413cbe912c
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-7f5eab3bb338f19f8ebfa2cbe177c9c4
+7c1ca4f0a3eaa7c1c9f0052641e9f359
   postComentarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -856,7 +856,7 @@ db3a7f174f6fa72b9f7a12413cbe912c
 e41be545bbcc030c87cd17d5bcc6ed77
   postComentarioR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "comentario"#) -}
-f14f331927a2b881d7988adffb328021
+41e92fbde80c2f70081d2049396a2cd0
   postComentarioR3 ::
     Model.Comentario
     -> Control.Monad.Trans.Reader.ReaderT
@@ -881,7 +881,7 @@ f14f331927a2b881d7988adffb328021
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
                  Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
-8938e94821bc9e742260b6b4948a91aa
+fd58d4f1767e72af5a4daa13de64e73e
   postComentarioR_ds ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Model.Comentario
