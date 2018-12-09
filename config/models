@@ -26,3 +26,11 @@ Evento json
     imagem        Text
     tipo          Text
     deriving Show
+    
+Administrador json
+    nome          Text
+    sobrenome     Text
+    email         Text
+    login         Text
+    senha         Text
+    deriving Show
