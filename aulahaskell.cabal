@@ -27,6 +27,7 @@ library
       Handler.Common
       Handler.Noticia
       Handler.Categoria
+      Handler.Comentario
       Import
       Import.NoFoundation
       Model

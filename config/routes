@@ -9,3 +9,6 @@
 
 /categorias                 ListaCategoriaR    GET
 /categoria                  CategoriaR         POST
+
+/comentarios/#NoticiaId     ListaComentarioR   GET
+/comentario                 ComentarioR        POST

@@ -10,3 +10,10 @@ Noticia json
 Categoria json
     nome          Text
     deriving Show
+    
+Comentario json
+    autor         Text
+    dataPostagem  Text
+    conteudo      Text
+    noticiaid     NoticiaId
+    deriving Show
