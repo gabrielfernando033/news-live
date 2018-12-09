@@ -17,3 +17,12 @@ Comentario json
     conteudo      Text
     noticiaid     NoticiaId
     deriving Show
+    
+Evento json
+    titulo        Text
+    descricao     Text
+    dataEvento    Text
+    preco         Float
+    imagem        Text
+    tipo          Text
+    deriving Show

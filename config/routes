@@ -12,3 +12,6 @@
 
 /comentarios/#NoticiaId     ListaComentarioR   GET
 /comentario                 ComentarioR        POST
+
+/eventos                    ListaEventoR       GET
+/evento                     EventoR            POST
