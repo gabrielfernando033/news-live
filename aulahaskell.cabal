@@ -29,7 +29,7 @@ library
       Handler.Categoria
       Handler.Comentario
       Handler.Evento
-      Handler.Admin
+      Handler.Administrador
       Import
       Import.NoFoundation
       Model

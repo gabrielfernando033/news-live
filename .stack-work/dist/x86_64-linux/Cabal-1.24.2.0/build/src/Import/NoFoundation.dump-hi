@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-09 18:35:22.115494 UTC
+2018-12-09 20:04:46.831185 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Import.NoFoundation 8002
-  interface hash: 54d49de14aa5ab3deb9970f55f17cea6
-  ABI hash: ee5ed0bf5db2990e615c78413b31ee9c
-  export-list hash: 1bd0e0bdc717d8c5f4d131902a138a65
+  interface hash: 24a1a474829ceb4b2edc3bbdb3b70170
+  ABI hash: 45520a838c5c65ca8e0dddd5f9e0a88b
+  export-list hash: f056beaf85a454efd145fbb606d9ca6c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -1515,6 +1515,8 @@ exports:
   Data.Aeson.Types.ToJSON.KeyValue|{Data.Aeson.Types.ToJSON..=}
   Data.Aeson.Types.ToJSON.ToJSON{Data.Aeson.Types.ToJSON.toEncoding Data.Aeson.Types.ToJSON.toEncodingList Data.Aeson.Types.ToJSON.toJSON Data.Aeson.Types.ToJSON.toJSONList}
   Control.Concurrent.Async.Async{asyncThreadId}
+  Model.Administrador{Model.Administrador administradorEmail administradorNome administradorSenha administradorSobrenome administradorUsuario}
+  Model.AdministradorId
   Model.Categoria{Model.Categoria categoriaNome}
   Model.CategoriaId
   Model.Comentario{Model.Comentario comentarioAutor comentarioConteudo comentarioDataPostagem comentarioNoticiaid}
@@ -1725,9 +1727,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.CategoriaId Model.CategoriaNome Model.ComentarioAutor Model.ComentarioConteudo Model.ComentarioDataPostagem Model.ComentarioId Model.ComentarioNoticiaid Model.EventoDataEvento Model.EventoDescricao Model.EventoId Model.EventoImagem Model.EventoPreco Model.EventoTipo Model.EventoTitulo Model.NoticiaCategoriaid Model.NoticiaConteudo Model.NoticiaDataPostagem Model.NoticiaId Model.NoticiaImagem Model.NoticiaSubtitulo Model.NoticiaTitulo}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.AdministradorEmail Model.AdministradorId Model.AdministradorNome Model.AdministradorSenha Model.AdministradorSobrenome Model.AdministradorUsuario Model.CategoriaId Model.CategoriaNome Model.ComentarioAutor Model.ComentarioConteudo Model.ComentarioDataPostagem Model.ComentarioId Model.ComentarioNoticiaid Model.EventoDataEvento Model.EventoDescricao Model.EventoId Model.EventoImagem Model.EventoPreco Model.EventoTipo Model.EventoTitulo Model.NoticiaCategoriaid Model.NoticiaConteudo Model.NoticiaDataPostagem Model.NoticiaId Model.NoticiaImagem Model.NoticiaSubtitulo Model.NoticiaTitulo}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
-  Database.Persist.Class.PersistEntity.Key|{Model.CategoriaKey Model.ComentarioKey Model.EventoKey Model.NoticiaKey unCategoriaKey unComentarioKey unEventoKey unNoticiaKey}
+  Database.Persist.Class.PersistEntity.Key|{Model.AdministradorKey Model.CategoriaKey Model.ComentarioKey Model.EventoKey Model.NoticiaKey unAdministradorKey unCategoriaKey unComentarioKey unEventoKey unNoticiaKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
@@ -2240,67 +2242,83 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Model 16ff8dc1436ef86bb534114909aab486
-  exports: 837bdabd9cf1facbef2c2779e3b74623
-  Categoria f47362902bf5779fe1abe52907c68886
-  Categoria 9df8f4644e9fda20db422a3dc5d314f8
-  CategoriaId 88ffc1a2d9e542ff37cc538abc5c4c0f
-  CategoriaId ae8749c6fb7a56f12c93fea2c096deea
-  CategoriaKey eabb6a6126aeda3304c587a219398481
-  CategoriaNome 1fa350fcf05b1443e04ab2dbf5f77db5
-  Comentario d286df9275d4c11d9eddbcd87a6f2f4b
-  Comentario 015e1887564742222b0a9f76c9b2ab72
-  ComentarioAutor e6137ce8925aea4aea9bd44ce60a0df5
-  ComentarioConteudo 603d56088dae84d8a8c3a6999832a1cc
-  ComentarioDataPostagem dc7a5341958da4de0776f9afc604a75f
-  ComentarioId a854fd23b1cec77590a152db4291ee18
-  ComentarioId c3b9a8fcfe12389a83b167568d894f89
-  ComentarioKey 89e0b61e0c3b40514f02824d0b3d5bbe
-  ComentarioNoticiaid d0dce152a322eb7b61f8107fdb3baea1
-  Evento 6326b09d1609d549bb7517929e279a2e
-  Evento baa92e60609f89e234b9df48cb8fb5d3
-  EventoDataEvento 1c767ab35efcf159ca480bb6096408c7
-  EventoDescricao 7ccca12ad428c2b2f2d9b3f2df2bb651
-  EventoId acb9bb2ad71527da8bc5ca87323b2c75
-  EventoId 9c1e54ed45438d0b9521e440d862dca5
-  EventoImagem 6075667bbfc13df1fcab99fe3eb74ae4
-  EventoKey 636f086fff5e54f69281a33e09119a9f
-  EventoPreco 045e8c991565e1befbffe0d4524dfb2b
-  EventoTipo 8d385577eddccf24b43780a6c98391d5
-  EventoTitulo c4eddf56370d5fdcc6b967212dad17ce
-  Noticia 2983fcec722b6cc09483a4b0b4970c17
-  Noticia 7ee39d5d749caa8fd216705c2eab5cd7
-  NoticiaCategoriaid d63316452e0313c43096defa40c971d3
-  NoticiaConteudo 2eb35246210de3f11e1c756e7a45e1fd
-  NoticiaDataPostagem cead2cbc83993038c579d1668b027342
-  NoticiaId dc974c4a0dd768dbb43e0e4a5ce2a77d
-  NoticiaId 57c68001ca7612883174a1a33e2528a1
-  NoticiaImagem 97f5f5d12fbe97eb1794521c6ac5a408
-  NoticiaKey 780ff91f98beb99fb2f43e65d02bfe6c
-  NoticiaSubtitulo 8a2561edef801d6d287ade471c136dda
-  NoticiaTitulo 49483cd7c9a32684adc32bfe3940718d
-  categoriaNome 74320edf0b52dbba47375caf6e5091fa
-  comentarioAutor aab2ec423d741fbcc61b5b016d1ca05f
-  comentarioConteudo 68c5fb630a6c9d2ee2332150562c60b9
-  comentarioDataPostagem 511d7240d46b6267ba9b0b2eb9acdb87
-  comentarioNoticiaid f55adcc1819227b590505b2d85c937f5
-  eventoDataEvento 85fd685e6b2afc961176ede299c70ed3
-  eventoDescricao 9fe910333c93c411caf4b6d2a4b94e60
-  eventoImagem 70b5e0e083c214d31cf81a60ccdfc88d
-  eventoPreco 53d11780aef347ef75e9d95093e605db
-  eventoTipo bc0e55595b2bb313cab4410d6aa5a780
-  eventoTitulo 3fec638e82d55d3dabf7288c962d5cde
+import  -/  Model 98f21df61e586f562a86c57e1bc09d69
+  exports: 9af66310a835e06a6f9a9ea45ce4d44c
+  Administrador 6bbb890968cbaf78ac0e7c5b2e3c32b0
+  Administrador c1d177d880c1f35771eea09368030530
+  AdministradorEmail d94258684813401444b787611e29e23b
+  AdministradorId 2a545ee9ab1cb0714e9730125fdff02c
+  AdministradorId 26a7337ca53d01e2384071d8cc311d23
+  AdministradorKey c612301673c57606546f6869d0497803
+  AdministradorNome 69cf074f49e80fd3bafbd042a16d70ee
+  AdministradorSenha 2752a6b3d7b4958380356c01277563b9
+  AdministradorSobrenome b83ca215ebb96832e6debbe56569d68c
+  AdministradorUsuario 29042f37b34395d070f9c167f2b3f673
+  Categoria ceaf5344fc2976e5c5c373d7936bd019
+  Categoria 7e61b142f09374686ecb2054e9f74109
+  CategoriaId 63ffd32874ca5c1b4315a485488618d3
+  CategoriaId 8ebd71dead1fdab2cd323ea39fd177d6
+  CategoriaKey e9f9f20e8391e9865f112eaa7e2c3ac9
+  CategoriaNome 6fac59cc825fee8494b40e64b277eaa0
+  Comentario da8daad5031ad373334365b8b7e21777
+  Comentario d04bf2a27f4f267bd12b6709882306b0
+  ComentarioAutor 00f0a4347f96a15912ce62895b2be61f
+  ComentarioConteudo 60246521823defa1afb1a84db05f47bc
+  ComentarioDataPostagem a61d4720dbc4c49da05407282d58bb6c
+  ComentarioId cd7c3550369dc53abcb6e4a20b4e1841
+  ComentarioId e9841bf6aaa9a6eee03a57637adcbc14
+  ComentarioKey 781ef01980eff337d6646388964f2080
+  ComentarioNoticiaid 2bc300b38a35293c81f81d45ae10312d
+  Evento 3e5f4b37e38344620b23471860e96c93
+  Evento af3542a667236db1e74589651c49c9bc
+  EventoDataEvento 376729f06ca4921ca7d7a952a2beac63
+  EventoDescricao 6c0f4e79795ba1456f077fdcd2c8823c
+  EventoId 99dec47376dae898311a773f0e8f5946
+  EventoId 3e1dfdbef70842384c094f5ddc80b47f
+  EventoImagem 8ab88da66fa7f8882f1ef59ab766bd14
+  EventoKey 261350dbd4b4a82abb8f409b16e1109b
+  EventoPreco d9d9c70a5838a2dcda84730c95483bc0
+  EventoTipo 0af98df5959b2e9be876dda5ffc3db7f
+  EventoTitulo 164caf34e3d76b729955b645a8dbbc57
+  Noticia 1e70b7aa7b140f6d18a402c7af240312
+  Noticia 74e254f2a081590a4c845e462d8e5c98
+  NoticiaCategoriaid 86343d8ccad42ff1e56ae9a07c993cc0
+  NoticiaConteudo ae482d75648e70b49aacd374accf041d
+  NoticiaDataPostagem cb6f5e056b7991d46df9f0ebd1829ba6
+  NoticiaId 87665827d8efbad7847d8973eeebff7f
+  NoticiaId 339bfa68d32bf60c2bbd9dca2bf73926
+  NoticiaImagem 81630907ca2a671b0bae7679eaf7f398
+  NoticiaKey 57c8d2c8525eb02fb49335ee022e449b
+  NoticiaSubtitulo 77980767a83f70aa4733874acf4eb450
+  NoticiaTitulo a2fb748fded93789e00eed779c590658
+  administradorEmail df233bb7698ce669f9a5ebb9f9b8b0d4
+  administradorNome 1bf09c43f020bb7d74269f17d5966de2
+  administradorSenha 23e9a19c96563d95bd99090907e71d8b
+  administradorSobrenome 67c02ec54a9d964fb5ac2a6279173c87
+  administradorUsuario cde60af538588a41dbd13e15b449b907
+  categoriaNome e261c77fccc8ec70684336892a7b93f2
+  comentarioAutor 9e78dbb0e04eeed94a2a4c0d131c5e7c
+  comentarioConteudo 59befbdc1d036f6958f0f2193bae1c35
+  comentarioDataPostagem 96e46b000c43f5a536200b44f065a7f4
+  comentarioNoticiaid 71c391b2a75e93fc4c2d1e2a3cf78983
+  eventoDataEvento f761eca6101b242bd0cd4155afb626e3
+  eventoDescricao f91f1d1f1470cabdebb64dc6a030f198
+  eventoImagem 0bf64bfea473f39cd1c063f3b299b77e
+  eventoPreco c67cfcde1f3d4d28ee57740f8e404709
+  eventoTipo 7b2622358ecfa376fa4d477a2b22addf
+  eventoTitulo 6f1a6633bbe4b01f87a1545d49d8c6b1
   migrateAll 766b2bb2a8595f03716178a1b65b2cfe
-  noticiaCategoriaid e8664c74648c7a8a38cd6cccf7c9b1cc
-  noticiaConteudo 612175a971c82ea8a564c65d0a2bfc63
-  noticiaDataPostagem e41e97db6870b13b5fa59987a9114a74
-  noticiaImagem 2688f25b29474b127e5691c75d27bc50
-  noticiaSubtitulo d15b00d7f122db9aef9e24864a270007
-  noticiaTitulo bb854b8046b9f2169980e634b8e49170
-  unCategoriaKey 9df8f4644e9fda20db422a3dc5d314f8
-  unComentarioKey 015e1887564742222b0a9f76c9b2ab72
-  unEventoKey baa92e60609f89e234b9df48cb8fb5d3
-  unNoticiaKey 7ee39d5d749caa8fd216705c2eab5cd7
+  noticiaCategoriaid 1d4f6d986c862fc6c6c3e53681ddcea2
+  noticiaConteudo 0b5e2b75924d0fe4d048834a9efb4032
+  noticiaDataPostagem 6dafa0cab04386de5f4818213839e52a
+  noticiaImagem 280c12996131c4bf23bd16270ced0a9c
+  noticiaSubtitulo d409f805a98653b63ec8f44d75c8ce0a
+  noticiaTitulo 3d569cea87306ecf0164606a2160b52f
+  unAdministradorKey c1d177d880c1f35771eea09368030530
+  unCategoriaKey 7e61b142f09374686ecb2054e9f74109
+  unComentarioKey d04bf2a27f4f267bd12b6709882306b0
+  unEventoKey af3542a667236db1e74589651c49c9bc
+  unNoticiaKey 74e254f2a081590a4c845e462d8e5c98
 import  -/  Settings 7b5bc527eeddfc6735cbf82ccfd96eb0
   exports: 1ed8f8a13f069b5ec5b913864838950c
   AppSettings 6e5ba25daa95420f047f78eff308cd25
