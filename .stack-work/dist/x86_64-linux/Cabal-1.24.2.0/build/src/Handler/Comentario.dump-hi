@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-11 01:19:40.797101 UTC
+2018-12-11 01:38:27.323171 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Comentario 8002
-  interface hash: 9d11eac1635bdc29de86f48a54830974
-  ABI hash: dcc71621435b4a592ce436a72ced6b0a
+  interface hash: 1a126bcd172e7e653bc39f7a2987cb74
+  ABI hash: 1c8c2b4721f7705bf249d7db202a8405
   export-list hash: af897611bdb33b93e6771062557461fa
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
@@ -343,10 +343,10 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation ad3f76a1e4de30c39cd08d9f2966d711
-  Handler c7dd5ed8ef99e1b75c14455fe69f5a60
-import  -/  Import 9a6172f63ca0e9a54348a69f41e2bf00
-  exports: 9a01e6da7cdde27056ed0f7f72eb5e4a
+import  -/  Foundation ae89d0cf5895dc8cac247774d311fdda
+  Handler 021f0e63efca2885a92168ba8b103698
+import  -/  Import d1305d87465a31de07ec033e28cde2c9
+  exports: 7d40cf6d5ef8abdeb08759dddcbde982
 import  -/  Model 98f21df61e586f562a86c57e1bc09d69
   Comentario d04bf2a27f4f267bd12b6709882306b0
   ComentarioNoticiaid 2bc300b38a35293c81f81d45ae10312d
@@ -385,7 +385,7 @@ f9ecc60c7f4010593c88fcbf5a0e2e47
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-8d30ef8242ae7f81a43fd09fb97a16c1
+0164188e43f4ee50c752df9810f7a89d
   $wpostComentarioR ::
     Yesod.Core.Types.YesodRequest
     -> Yesod.Core.Types.RunHandlerEnv Foundation.App
@@ -514,7 +514,7 @@ f9ecc60c7f4010593c88fcbf5a0e2e47
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv4 } } } }) -}
-2c3b291ccbb6c93a61f06262569335d6
+fed4e0cdf27e744bf085326bcfc47d70
   getListaComentarioR ::
     Model.NoticiaId -> Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 3, Strictness: <L,U><L,U><S,U>,
@@ -530,7 +530,7 @@ f9ecc60c7f4010593c88fcbf5a0e2e47
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Yesod.Core.Types.TypedContent>_N))) -}
-3e2d803e1f29c5ab3246d9739976f372
+906f7f19a7448669fc3a4697053c80f1
   getListaComentarioR1 ::
     Model.NoticiaId
     -> Yesod.Core.Types.HandlerData
@@ -824,7 +824,7 @@ f0fc074364ced5bf1d052f17f50e2046
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-946346878aca1d046bb8a5eb6e8e80ee
+f8cc2f52136276261a3ad28d1a92d9c3
   postComentarioR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -838,7 +838,7 @@ f0fc074364ced5bf1d052f17f50e2046
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-61ad73240fc6ca4b4b764edba53075b5
+d00192757b793038bbb5d6e3f1ccce69
   postComentarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -856,7 +856,7 @@ f0fc074364ced5bf1d052f17f50e2046
 e41be545bbcc030c87cd17d5bcc6ed77
   postComentarioR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "comentario"#) -}
-04d6a90afa93a1b4c16c0e86be50ee72
+24904dc2b6405f313e4e1d2ff4823752
   postComentarioR3 ::
     Model.Comentario
     -> Control.Monad.Trans.Reader.ReaderT
@@ -881,7 +881,7 @@ e41be545bbcc030c87cd17d5bcc6ed77
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
                  Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
-52c968559cf1d3d4f816955db1937954
+fdc989d8da26fc95f9b177742d9afa4c
   postComentarioR_ds ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Model.Comentario

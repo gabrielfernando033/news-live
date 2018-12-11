@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-11 01:19:39.064431 UTC
+2018-12-11 01:38:25.515577 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Import 8002
-  interface hash: 6b397f6cf725653733efc9db781cb73e
-  ABI hash: 9a6172f63ca0e9a54348a69f41e2bf00
-  export-list hash: 9a01e6da7cdde27056ed0f7f72eb5e4a
+  interface hash: ee23c00c9c743ecffb492087629774c2
+  ABI hash: d1305d87465a31de07ec033e28cde2c9
+  export-list hash: 7d40cf6d5ef8abdeb08759dddcbde982
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ab396f11155bd696ab63895436e6f1df
   sig of: Nothing
@@ -1879,7 +1879,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.AdminLoginR Foundation.AdminR Foundation.BuscarNoticiaR Foundation.CategoriaR Foundation.ComentarioR Foundation.EventoR Foundation.FaviconR Foundation.ListaCategoriaR Foundation.ListaComentarioR Foundation.ListaEventoR Foundation.ListaNoticiaR Foundation.NoticiaCategoriaR Foundation.NoticiaR Foundation.RobotsR Foundation.StaticR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminLoginR Foundation.AdminR Foundation.BuscarNoticiaR Foundation.CategoriaR Foundation.ComentarioR Foundation.EventoR Foundation.FaviconR Foundation.ListaCategoriaR Foundation.ListaComentarioR Foundation.ListaEventoR Foundation.ListaNoticiaR Foundation.NoticiaCategoriaR Foundation.NoticiaR Foundation.NoticiaUnicaR Foundation.RobotsR Foundation.StaticR Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2249,34 +2249,35 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation ad3f76a1e4de30c39cd08d9f2966d711
-  exports: 3272d12ec70c3975c927196a76781b2e
-  AdminLoginR 16358d85cd9f3e90eae2eb690bdad0ad
-  AdminR 67539061f6f32c3831827254c49ccdbb
-  App 0344c59c52266c7b715d9db634b473d4
-  App fae5d3c6b312a0ab1ff188fbe1ef921e
-  BuscarNoticiaR ceb1afde6e0f2b6d5905c6c1fc76caa0
-  CategoriaR 19aeb633e2f3407f066485a99dfa2230
-  ComentarioR 3150b29b2f2d0172b4d6f3a6e9cab833
-  EventoR 72af1c45a4cc416fa5aaab469323bccf
-  FaviconR 2e3e384d7d442bf4f3dfc028c9f37118
-  Form 4ee87abbe2d8e92828de6f2c37a45914
-  Handler c7dd5ed8ef99e1b75c14455fe69f5a60
-  ListaCategoriaR 7885bb7d14000e4d2c40323aae4ac4f6
-  ListaComentarioR aabc84a0ecb40aafdd4e9feb5f28775c
-  ListaEventoR 37f7c1efa56361a38b19176435d29ea5
-  ListaNoticiaR 0d4f1f486101f81c1fa3b3a9d8903ae8
-  NoticiaCategoriaR 2392a1448cdf86d2c4d77a7b7e995855
-  NoticiaR a2f7b643e0579518f01c1af8fba3c007
-  RobotsR 7ef377d70d7b6b6b47578e4a741281c8
-  StaticR 42d23011b14da33746fab0ba1f832876
-  Widget ad90f8abfb586d6435671afa89badfe7
-  appConnPool a7965fb1f57ea0a770f38d8782a8f90d
-  appHttpManager fae5d3c6b312a0ab1ff188fbe1ef921e
-  appLogger ad943f012271bc321c4d75fb615fceb2
-  appSettings 5b4724a4b703eb639ff9c158200a1fbe
-  appStatic d3b13705a94b714f611edd25bba66733
-  resourcesApp 3e61d184facbc1acde4d0361b5f50f89
+import  -/  Foundation ae89d0cf5895dc8cac247774d311fdda
+  exports: 11365ed491164da96833897dd8830abb
+  AdminLoginR e0e1fecb2cf99031a23fc680d39dd8bd
+  AdminR 00a8d16b6c19de34419b7a756b8442de
+  App 73b05ded0e9547cb593c9cf43a562c47
+  App 0205d01714126e49bf629b0811aaeb48
+  BuscarNoticiaR 5c66f958139341145a2c844198ed7f9f
+  CategoriaR 587ae36bc238cae21aeb97956e428a46
+  ComentarioR e78e5d7b4bf39f238ce0ad733a84dc25
+  EventoR 0bf10d7f1bd473ee8cd3a0e63cb2e2ae
+  FaviconR 63a095a6d961b9f5bca16fc34f886f48
+  Form 494b3735bead6956b3fcceeb1aa3d015
+  Handler 021f0e63efca2885a92168ba8b103698
+  ListaCategoriaR fe1a289d54b0028ebe77f370d3fbf51c
+  ListaComentarioR 8c9d79d2cb7afe170b6ec8f474e727e1
+  ListaEventoR f6f817fbc05f39382a99b55e299b6ba8
+  ListaNoticiaR 4c08764d7e8dc1ffb34bf55c1ccb5486
+  NoticiaCategoriaR 916294bd626a0c72acd9150e08a749e8
+  NoticiaR 950bb42adb239793d4f26089c2a542fb
+  NoticiaUnicaR e4e4b1abaeb124efd5ffc794975ad11e
+  RobotsR aa51535c1ca9c8bc190704185fa082ec
+  StaticR ecfde789526718305f9b3a576db84f2d
+  Widget 166dfa77d54955080530a0c4f25bfc0a
+  appConnPool d1fea4f618b4639ec2a42b5ffce3e124
+  appHttpManager 0205d01714126e49bf629b0811aaeb48
+  appLogger 3146cc67305abacfa0d552b2b4566c11
+  appSettings e6835dd8e8f27c615cca0216756a067d
+  appStatic 4619904d8fad9c4a4928dbebab291f82
+  resourcesApp 8e688ddbae878a2c8988296cb80aa9a6
 import  -/  Import.NoFoundation 45520a838c5c65ca8e0dddd5f9e0a88b
   exports: f056beaf85a454efd145fbb606d9ca6c
 import  -/  Model 98f21df61e586f562a86c57e1bc09d69

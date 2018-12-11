@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-11 01:19:39.710313 UTC
+2018-12-11 01:38:26.187564 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Administrador 8002
-  interface hash: 485918291efbee1b8765c2fca91531f9
-  ABI hash: f01540320452782f5ebd3bf7b456a0c1
+  interface hash: 0b4353f00c6c88d94e723651dc3dc4d0
+  ABI hash: 3e013a7548ee70f548d72568118ccd69
   export-list hash: 59538f350c38eae98fd382e31e553d26
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
@@ -343,10 +343,10 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation ad3f76a1e4de30c39cd08d9f2966d711
-  Handler c7dd5ed8ef99e1b75c14455fe69f5a60
-import  -/  Import 9a6172f63ca0e9a54348a69f41e2bf00
-  exports: 9a01e6da7cdde27056ed0f7f72eb5e4a
+import  -/  Foundation ae89d0cf5895dc8cac247774d311fdda
+  Handler 021f0e63efca2885a92168ba8b103698
+import  -/  Import d1305d87465a31de07ec033e28cde2c9
+  exports: 7d40cf6d5ef8abdeb08759dddcbde982
 import  -/  Model 98f21df61e586f562a86c57e1bc09d69
   Administrador c1d177d880c1f35771eea09368030530
   AdministradorSenha 2752a6b3d7b4958380356c01277563b9
@@ -385,7 +385,7 @@ c4011b3abc00a876e5a648198c744ae0
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-ae1c80ee32ae7b01104520db87721e07
+210eef31bbe43797476d44f6725772f1
   $wpostAdminR ::
     Yesod.Core.Types.YesodRequest
     -> Yesod.Core.Types.RunHandlerEnv Foundation.App
@@ -525,7 +525,7 @@ ae1c80ee32ae7b01104520db87721e07
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv4 } } } }) -}
-2842458e950a6bf7e8ad44bd794e9212
+dadc73376f7e0974afc8fa7e7e9c12e7
   getAdminLoginR ::
     Data.Text.Internal.Text
     -> Data.Text.Internal.Text
@@ -544,7 +544,7 @@ ae1c80ee32ae7b01104520db87721e07
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Yesod.Core.Types.TypedContent>_N))) -}
-293120950c8d98dec39ea7c3088392a2
+d2eeeefd8ce1d8fc3282d8ce29174520
   getAdminLoginR1 ::
     Data.Text.Internal.Text
     -> Data.Text.Internal.Text
@@ -868,7 +868,7 @@ b27a7891545d00cf08d322c08e4dc92a
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-853bea4d307a136b1e900dab74351dd2
+43c9063507bec23b95ab0f04fc6a9e02
   postAdminR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -882,7 +882,7 @@ b27a7891545d00cf08d322c08e4dc92a
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-10234bfaa284c66064c8babc20985cc4
+05939740ae8254c73c2eb083e1a42c9c
   postAdminR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -900,7 +900,7 @@ b27a7891545d00cf08d322c08e4dc92a
 a54fe6a87dfbc286c7b2cd5b7b648339
   postAdminR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "adminid"#) -}
-683bf5d399105666e0f3d11d60edaffd
+1fd4d90bd7e90eaa6cd3796dfdda3fe0
   postAdminR3 ::
     Model.Administrador
     -> Control.Monad.Trans.Reader.ReaderT
@@ -925,7 +925,7 @@ a54fe6a87dfbc286c7b2cd5b7b648339
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
                  Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
-7da1635eebce989ab1d0b8907e8158b4
+50c0c51d838d60e68ef77582095cea58
   postAdminR_ds ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Model.Administrador

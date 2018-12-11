@@ -7,6 +7,7 @@
 /noticia                            NoticiaR           POST
 /noticias/buscar/#Text              BuscarNoticiaR     GET
 /noticias/categoria/#CategoriaId    NoticiaCategoriaR  GET
+/noticia/#NoticiaId                 NoticiaUnicaR      GET
 
 /categorias                         ListaCategoriaR    GET
 /categoria                          CategoriaR         POST

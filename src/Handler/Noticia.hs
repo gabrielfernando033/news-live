@@ -32,3 +32,9 @@ getNoticiaCategoriaR :: CategoriaId -> Handler TypedContent
 getNoticiaCategoriaR categoriaid = do 
     noticias <- runDB $ selectList [NoticiaCategoriaid ==. categoriaid] []
     sendStatusJSON ok200 (object ["noticias" .= noticias])
+    
+-- Buscar noticia por id
+getNoticiaUnicaR :: NoticiaId -> Handler TypedContent
+getNoticiaUnicaR noticiaid = do 
+    noticia <- runDB $ selectList [NoticiaId ==. noticiaid] []
+    sendStatusJSON ok200 (object ["noticia" .= noticia])
