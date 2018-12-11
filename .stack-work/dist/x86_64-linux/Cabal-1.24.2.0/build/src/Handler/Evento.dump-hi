@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-09 20:29:23.296582 UTC
+2018-12-11 01:19:41.416775 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Handler.Evento 8002
-  interface hash: 4b2b04286fa2991110752f07bec7f431
-  ABI hash: c1a0ce2f8d84b8e02b870db38e92b5a6
+  interface hash: faa45006c8dd1c8391849a1cdd41d405
+  ABI hash: ef4a9c10da83454502f815694b7ed76c
   export-list hash: bc0a4c381df0ce2f2e7c692d0ecadf97
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 421be2c63b880e443d21a0677e825275
@@ -343,10 +343,10 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
-import  -/  Foundation 4e019558cbd4bdad1d222e7e27089fe8
-  Handler 4d858b9fd636ab097494ba7b19b5b20f
-import  -/  Import 81069887069043ad845ad794661b61f3
-  exports: 5fdebe7da3d40d3546d1394c597ec75d
+import  -/  Foundation ad3f76a1e4de30c39cd08d9f2966d711
+  Handler c7dd5ed8ef99e1b75c14455fe69f5a60
+import  -/  Import 9a6172f63ca0e9a54348a69f41e2bf00
+  exports: 9a01e6da7cdde27056ed0f7f72eb5e4a
 import  -/  Model 98f21df61e586f562a86c57e1bc09d69
   Evento af3542a667236db1e74589651c49c9bc
   EventoId 99dec47376dae898311a773f0e8f5946
@@ -373,7 +373,7 @@ import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-671d37031a543a6fdb350c34eb9e750b
+32c83511052598e9cd5fce9eb88fc174
   $wpostEventoR ::
     Yesod.Core.Types.YesodRequest
     -> Yesod.Core.Types.RunHandlerEnv Foundation.App
@@ -501,7 +501,7 @@ import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
                                nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
                                (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
                    ipv4 } } } }) -}
-9208138756cdaea7acdc56607846bcaf
+fb8fd62a220cad30d4ebd165e95ba799
   getListaEventoR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -515,7 +515,7 @@ import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-873b94c6ff7ee737af0285a79e287b0f
+69d4edc246252f7fbfced55cd940f629
   getListaEventoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -630,7 +630,7 @@ import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
 59590909821314dcd208438da89abeb9
   getListaEventoR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "eventos"#) -}
-d7fba089743c6aad5fbfa0701ab93b41
+fe95c9718beeec9010a7095bd61b2953
   getListaEventoR3 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -773,7 +773,7 @@ ca82affca4a909f6104447d68f9e577c
                 Data.Aeson.Types.Internal.Value,
               GHC.Types.Int) #)
   {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-04dd5108ec96f77c4a638ef5ae76d303
+3ddce40eaa4afcbe4e0cc474b6b2ca7e
   getListaEventoR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -799,7 +799,7 @@ ca82affca4a909f6104447d68f9e577c
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Evento))
                    Handler.Evento.getListaEventoR4) -}
-6ed35179b8670582e87bc595719f180d
+27e1a682bb26f6022293b68c919111a1
   postEventoR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <S(SSSSL),1*U(U,U,U,U,U)><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -813,7 +813,7 @@ ca82affca4a909f6104447d68f9e577c
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-7bb0b6e3f6c4bc29f03093e90e55c62d
+32d058cde3a8df344bc42217136e8446
   postEventoR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -831,7 +831,7 @@ ca82affca4a909f6104447d68f9e577c
 2473f8fc81cdc4ecd61666ba630d36c6
   postEventoR2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "evento"#) -}
-4a3d69f81ac0668f10bb740be871e4ce
+2033715dc7d1a8a45b7b297cae979c06
   postEventoR3 ::
     Model.Evento
     -> Control.Monad.Trans.Reader.ReaderT
@@ -855,7 +855,7 @@ ca82affca4a909f6104447d68f9e577c
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
                  Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 }) -}
-ec0ae70789010731f5ac8da6d265db3e
+6f5f8e15bdd36dbd0c8af315ef5238e2
   postEventoR_ds ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO Model.Evento
   {- Unfolding: (Yesod.Core.Json.requireJsonBody

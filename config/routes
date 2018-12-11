@@ -3,18 +3,19 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/noticias                   ListaNoticiaR      GET
-/noticia                    NoticiaR           POST
-/noticias/buscar/#Text      BuscarNoticiaR     GET
+/noticias                           ListaNoticiaR      GET
+/noticia                            NoticiaR           POST
+/noticias/buscar/#Text              BuscarNoticiaR     GET
+/noticias/categoria/#CategoriaId    NoticiaCategoriaR  GET
 
-/categorias                 ListaCategoriaR    GET
-/categoria                  CategoriaR         POST
+/categorias                         ListaCategoriaR    GET
+/categoria                          CategoriaR         POST
 
-/comentarios/#NoticiaId     ListaComentarioR   GET
-/comentario                 ComentarioR        POST
+/comentarios/#NoticiaId             ListaComentarioR   GET
+/comentario                         ComentarioR        POST
 
-/eventos                    ListaEventoR       GET
-/evento                     EventoR            POST
+/eventos                            ListaEventoR       GET
+/evento                             EventoR            POST
 
-/adminlogin/#Text/#Text     AdminLoginR        GET
-/admin                      AdminR             POST
+/adminlogin/#Text/#Text             AdminLoginR        GET
+/admin                              AdminR             POST

@@ -26,3 +26,9 @@ getBuscarNoticiaR :: Text -> Handler TypedContent
 getBuscarNoticiaR nome = do 
     noticia <- runDB $ selectList [Filter NoticiaTitulo (Left $ concat ["%", nome, "%"]) (BackendSpecificFilter "ILIKE")] []
     sendStatusJSON ok200 (object ["resultado" .= noticia])
+    
+-- Buscar noticias por categoria
+getNoticiaCategoriaR :: CategoriaId -> Handler TypedContent
+getNoticiaCategoriaR categoriaid = do 
+    noticias <- runDB $ selectList [NoticiaCategoriaid ==. categoriaid] []
+    sendStatusJSON ok200 (object ["noticias" .= noticias])

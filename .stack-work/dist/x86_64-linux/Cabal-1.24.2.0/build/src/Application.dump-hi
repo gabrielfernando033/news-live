@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-09 20:32:35.858853 UTC
+2018-12-11 01:19:46.510447 UTC
 
 interface aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX:Application [orphan module] 8002
-  interface hash: a3437b2e2b24fda4654ffd34aef16ee3
-  ABI hash: a0e7d9b9d7fc688e2a8f2c03b244b6b9
-  export-list hash: 81612031f6689b85bb9c97861d9fc408
-  orphan hash: 09e7e05c78e1c6cadc30613acceeef2f
+  interface hash: e598da761b5d08de3f0cd7507f95858e
+  ABI hash: 2c784f86f27ff5f872c49109d9b2733c
+  export-list hash: 5d7b067d5d7787ae3040c739a041ac8d
+  orphan hash: e8535b5fe32b80de18e6e98f68245c3b
   flag hash: 5c61ced8fce96568580582466a9bf356
   sig of: Nothing
   used TH splices: True
@@ -348,56 +348,58 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation 4e019558cbd4bdad1d222e7e27089fe8
-  AdminLoginR ade64862a5111244f18088f4154e2657
-  AdminR ce9360c26bb8c0b05edb12182f4e7783
-  App 1d7be86cefb634390f43da77be60ff2f
-  App 017a2990b8dfe08d093ca123f6269e39
-  BuscarNoticiaR 80e40f1b9561572626e6a67d6f12d228
-  CategoriaR b512a163234a6adc9549bee7fbaa3baf
-  ComentarioR 870d43b9792b644c277f9c42c8b613e9
-  EventoR 945e63aaa3fb11ebd80bb9ae3242b287
-  FaviconR afcb718470418e08e6f80fc37774c829
-  ListaCategoriaR a2077018f4c0991a70a71792dde65909
-  ListaComentarioR 26b196b517925fb089ea6cd8dad73cd6
-  ListaEventoR e39fe025adc09bc7606ea0160eba33e8
-  ListaNoticiaR d2bac6124d006ff11b6f77b7daada622
-  NoticiaR 9e0076ad6ca6ede212ed3b5dc3288131
-  RobotsR 2b8ad46f96d5f22cf312c83924ae3fe7
-  StaticR 90c5ee76b4dbe14053fe6421d7e2bdeb
-  appConnPool b18aa6cdf60124286dfb9794968bbab8
-  appHttpManager 017a2990b8dfe08d093ca123f6269e39
-  appLogger e8e701deddbe0c44b57d36f1b4e651e0
-  appSettings 9f9eedb16310e14880278034c70eece9
-  appStatic 7bb167d5fa5243b17efb1578745ba387
-  resourcesApp 38352d3d7f11cea3ed888af60fdd394c
-import  -/  Handler.Administrador 98e6d0f28b17a89928741be53f07fb4e
+import  -/  Foundation ad3f76a1e4de30c39cd08d9f2966d711
+  AdminLoginR 16358d85cd9f3e90eae2eb690bdad0ad
+  AdminR 67539061f6f32c3831827254c49ccdbb
+  App 0344c59c52266c7b715d9db634b473d4
+  App fae5d3c6b312a0ab1ff188fbe1ef921e
+  BuscarNoticiaR ceb1afde6e0f2b6d5905c6c1fc76caa0
+  CategoriaR 19aeb633e2f3407f066485a99dfa2230
+  ComentarioR 3150b29b2f2d0172b4d6f3a6e9cab833
+  EventoR 72af1c45a4cc416fa5aaab469323bccf
+  FaviconR 2e3e384d7d442bf4f3dfc028c9f37118
+  ListaCategoriaR 7885bb7d14000e4d2c40323aae4ac4f6
+  ListaComentarioR aabc84a0ecb40aafdd4e9feb5f28775c
+  ListaEventoR 37f7c1efa56361a38b19176435d29ea5
+  ListaNoticiaR 0d4f1f486101f81c1fa3b3a9d8903ae8
+  NoticiaCategoriaR 2392a1448cdf86d2c4d77a7b7e995855
+  NoticiaR a2f7b643e0579518f01c1af8fba3c007
+  RobotsR 7ef377d70d7b6b6b47578e4a741281c8
+  StaticR 42d23011b14da33746fab0ba1f832876
+  appConnPool a7965fb1f57ea0a770f38d8782a8f90d
+  appHttpManager fae5d3c6b312a0ab1ff188fbe1ef921e
+  appLogger ad943f012271bc321c4d75fb615fceb2
+  appSettings 5b4724a4b703eb639ff9c158200a1fbe
+  appStatic d3b13705a94b714f611edd25bba66733
+  resourcesApp 3e61d184facbc1acde4d0361b5f50f89
+import  -/  Handler.Administrador f01540320452782f5ebd3bf7b456a0c1
   exports: 59538f350c38eae98fd382e31e553d26
-  getAdminLoginR 82ae7501018c0cc7757fa29924c8ba98
-  postAdminR c6c57d0e972edeebf4bf877a5beeef15
-import  -/  Handler.Categoria b2a3fe8cde34dd24975b904efe4e8d3f
+  getAdminLoginR 2842458e950a6bf7e8ad44bd794e9212
+  postAdminR 853bea4d307a136b1e900dab74351dd2
+import  -/  Handler.Categoria 08294ff5411b2ac56acb8ef410082427
   exports: 9b6b4aac8c6f8080c5b6ac87d7472763
-  getListaCategoriaR e97a78ea77d791d4682959fe8cb2a63f
-  postCategoriaR e7ee131e65fe2cc9b16121e613804bf8
-import  -/  Handler.Comentario 44f444df31af07c30c7688e2b0eabbd9
+  getListaCategoriaR 5483a207ff584c10d0638167a00e23bd
+  postCategoriaR 8e34f81ddffb9fc2302a8ac848672a2c
+import  -/  Handler.Comentario dcc71621435b4a592ce436a72ced6b0a
   exports: af897611bdb33b93e6771062557461fa
-  getListaComentarioR c400c23f56306125d4fb6b81001e4794
-  postComentarioR 6288c38dab445bb1cb1ae410a905c751
-import  -/  Handler.Common 4cbe9997414e41b0f5f701138c136012
+  getListaComentarioR 2c3b291ccbb6c93a61f06262569335d6
+  postComentarioR 946346878aca1d046bb8a5eb6e8e80ee
+import  -/  Handler.Common ac870ca2c36b895ae68377b56ef43bd5
   exports: 89cf1091f8d0221e0f85dda598073cf5
-  getFaviconR ae5f1dc8110c1abdcd9d2f9001e6afad
-  getRobotsR e10e1f9de84ed3cd6e9ce4e92a175717
-import  -/  Handler.Evento c1a0ce2f8d84b8e02b870db38e92b5a6
+  getFaviconR 27c8ead7992f550f789bb06e0a172ee1
+  getRobotsR 97fbb0ceb754c56d8f26b86086e501f0
+import  -/  Handler.Evento ef4a9c10da83454502f815694b7ed76c
   exports: bc0a4c381df0ce2f2e7c692d0ecadf97
-  getListaEventoR 9208138756cdaea7acdc56607846bcaf
-  postEventoR 6ed35179b8670582e87bc595719f180d
-import  -/  Handler.Noticia 9fa4eaf602348ec586e173bc20eb9e08
-  exports: 2c526f34d5e1637476f69714f7e477e6
-  getBuscarNoticiaR 8e072ebe0048ae147d4dff569e9e0354
-  getListaNoticiaR 8d0fd0f08b2392f6b6aec16a670114b4
-  postNoticiaR fac5ce11e3e966a5dc109594cf150b9b
-import  -/  Import 81069887069043ad845ad794661b61f3
-  exports: 5fdebe7da3d40d3546d1394c597ec75d
+  getListaEventoR fb8fd62a220cad30d4ebd165e95ba799
+  postEventoR 27e1a682bb26f6022293b68c919111a1
+import  -/  Handler.Noticia 47d273d5988b9dc9fddb5883288b76e9
+  exports: bb1f9a057c95ad081d83c8dac76a5cf8
+  getBuscarNoticiaR e3e897500e6540dcdfc113357f05e591
+  getListaNoticiaR 3e941b51940747188d9db220f7b41dcd
+  getNoticiaCategoriaR 127182196d2a113d8f9903f98e1cd249
+  postNoticiaR 127dd527ad10187a22f9561702588acb
+import  -/  Import 9a6172f63ca0e9a54348a69f41e2bf00
+  exports: 9a01e6da7cdde27056ed0f7f72eb5e4a
 import  -/  Model 98f21df61e586f562a86c57e1bc09d69
   migrateAll 766b2bb2a8595f03716178a1b65b2cfe
 import  -/  Settings 7b5bc527eeddfc6735cbf82ccfd96eb0
@@ -444,7 +446,7 @@ import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Cor
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.TH b2e43c7d5c29a2c36c8e1c2bdf663dbe
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static e8f90c76bf5b168d668c933b381656c3
-dd89305cd285351bb6996b609db73a61
+1134d5d452e849ca8e49d3cb78d27801
   $fYesodDispatchApp ::
     Yesod.Core.Class.Dispatch.YesodDispatch Foundation.App
   DFunId
@@ -453,7 +455,7 @@ dd89305cd285351bb6996b609db73a61
                   @ Foundation.App
                   Foundation.$fYesodApp
                   Application.$fYesodDispatchApp_$cyesodDispatch -}
-a1e44f6b81ce687ac2ba2295bf768582
+3c043ecbd041f6231969f40d398d6903
   $fYesodDispatchApp_$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv Foundation.App
     -> Network.Wai.Application
@@ -810,7 +812,7 @@ afad81a2d17a7401790acc3108e6a913
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "aulahaskell-0.0.0-7YLK6Ux0QIc2lR6LUT4XhX"#) -}
-75b387cc460615c9ffbd6816123427e9
+eb4192d423f18ce70a087bf248c168d9
   $w$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv Foundation.App
     -> Network.HTTP.Types.Method.Method
@@ -876,12 +878,12 @@ afad81a2d17a7401790acc3108e6a913
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U> -}
-97373dc7c3b8ca67daea60ec524d4426
+0bc955b11c74e8e1f269eb327d70c96d
   develMain :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: InlineRule (0, True, True)
                 Application.develMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-0663b2e229be94ffb203e2af5dfb5c9c
+62e35b4a626db995ae74e9300719ab9e
   develMain1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -909,7 +911,7 @@ b8d07635729601bcf5b1851b16510e6c
 c3e3a4f0b114fc649e52047ff6f5111c
   develMain14 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "src/Application.hs"#) -}
-c0d39319d3a1d77bb1f4a1facbe8cf55
+3c4ba710b3e7596e8e398e25ab58a399
   develMain15 ::
     Settings.AppSettings
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -923,7 +925,7 @@ c0d39319d3a1d77bb1f4a1facbe8cf55
                    @ GHC.IO.FilePath
                    Yesod.Default.Config2.configSettingsYml
                    (GHC.Types.[] @ GHC.IO.FilePath)) -}
-7c67b7548200134eb83662e5a7d24da0
+0a25081bde4c124b224eceeea2a7a194
   develMain2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -990,7 +992,7 @@ cd0780da43a19103787fe01024fdc4b7
 ca0ef9a7802f7c683076643359ccf27b
   develMain9 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 120#) -}
-6b1c8e28c2107b7d122c5e7ec853eaf1
+2b40f2599462b4ba63097b56727fe4bb
   getApplicationDev ::
     GHC.Types.IO
       (Network.Wai.Handler.Warp.Settings.Settings,
@@ -1002,7 +1004,7 @@ ca0ef9a7802f7c683076643359ccf27b
                 (Sym (GHC.Types.N:IO[0]
                           <(Network.Wai.Handler.Warp.Settings.Settings,
                             Network.Wai.Application)>_R)) -}
-d752c625e5c366d5df6eb7214cf8c0be
+564739b8781e35a0240ef249951dfd0f
   getApplicationRepl ::
     GHC.Types.IO
       (GHC.Types.Int, Foundation.App, Network.Wai.Application)
@@ -1012,7 +1014,7 @@ d752c625e5c366d5df6eb7214cf8c0be
                   `cast`
                 (Sym (GHC.Types.N:IO[0]
                           <(GHC.Types.Int, Foundation.App, Network.Wai.Application)>_R)) -}
-ae3b2436b26ad8d4f152018e69de3369
+787d9863d956dbb03dd8ecd9d81fc78f
   getApplicationRepl1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1047,7 +1049,7 @@ ae3b2436b26ad8d4f152018e69de3369
                      ipv7
                        (Yesod.Core.Dispatch.defaultMiddlewaresNoLogging
                           ipv9)) #) } } } } } } }) -}
-92b8092c4dc32c695a3bccbe63908102
+81c385e8a9072fc9994de0c196acb565
   makeFoundation ::
     Settings.AppSettings -> GHC.Types.IO Foundation.App
   {- Arity: 2,
@@ -1057,7 +1059,7 @@ ae3b2436b26ad8d4f152018e69de3369
                   `cast`
                 (<Settings.AppSettings>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Foundation.App>_R)) -}
-942fe066ca6b90600ab1f3401c533b6d
+98fe712e21440b681921adcdd060a70c
   makeLogWare ::
     Foundation.App -> GHC.Types.IO Network.Wai.Middleware
   {- Arity: 2,
@@ -1067,7 +1069,7 @@ ae3b2436b26ad8d4f152018e69de3369
                   `cast`
                 (<Foundation.App>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Network.Wai.Middleware>_R)) -}
-c95f94ccebb054511b869fa53077c7b6
+4aecfbf10bd26bdedb5036327aeba7d9
   makeLogWare1 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -1081,14 +1083,14 @@ c95f94ccebb054511b869fa53077c7b6
                  case w of ww { Foundation.App ww1 ww2 ww3 ww4 ww5 ->
                  case ww1 of ww6 { Settings.AppSettings ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ->
                  Application.$wmakeLogWare ww12 ww13 ww5 w1 } }) -}
-87d4f575fdf8e41bd5cea25426dc9b17
+68420ef537d2b179ae5b26b63929dc52
   shutdownApp :: Foundation.App -> GHC.Types.IO ()
   {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
      Unfolding: InlineRule (0, True, True)
                 Application.shutdownApp1
                   `cast`
                 (<Foundation.App>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-e9f3745258c3b2b433fdaa2930dcc428
+a00bcfe5cee010246cb5ffc38638eb2b
   shutdownApp1 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -1106,20 +1108,20 @@ efd014631fd4a6ad19589ed2e74a4ce6
      Unfolding: InlineRule (1, True, False)
                 (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# s, GHC.Tuple.() #)) -}
-635e8d4577e4aad18a7fd2a45cb855ff
+74422c7c10600b186c8a043ead3f1d86
   warpSettings ::
     Foundation.App -> Network.Wai.Handler.Warp.Settings.Settings
   {- Arity: 1,
      Strictness: <L,U(U(A,A,A,1*U,1*U,A,A,A,A,A,A,A,A,A),A,A,A,1*U(U,U))>,
      Unfolding: (\ (foundation :: Foundation.App) ->
                  let {
-                   lvl54 :: Yesod.Core.Types.Logger
+                   lvl55 :: Yesod.Core.Types.Logger
                    = case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
                      ds5 }
                  } in
                  let {
-                   lvl55 :: Network.Wai.Logger.DateCacheGetter
-                   = case lvl54 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
+                   lvl56 :: Network.Wai.Logger.DateCacheGetter
+                   = case lvl55 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
                  } in
                  Network.Wai.Handler.Warp.Settings.Settings
                    (case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
@@ -1136,7 +1138,7 @@ efd014631fd4a6ad19589ed2e74a4ce6
                       GHC.Types.False -> (# eta, GHC.Tuple.() #)
                       GHC.Types.True
                       -> case Yesod.Core.Class.Yesod.defaultMessageLoggerSource2
-                                lvl55
+                                lvl56
                                 Application.develMain6
                                 Application.develMain5
                                 Control.Monad.Logger.LevelError
@@ -1154,7 +1156,7 @@ efd014631fd4a6ad19589ed2e74a4ce6
                                                  @ GHC.Types.Char) })) of ww { (#,#) ww1 ww2 ->
                                  System.Log.FastLogger.LogStr.LogStr ww1 ww2 })
                                 eta of ds2 { (#,#) ipv2 ipv3 ->
-                         Yesod.Core.Types.loggerPutStr1 lvl54 ipv3 ipv2 } })
+                         Yesod.Core.Types.loggerPutStr1 lvl55 ipv3 ipv2 } })
                      `cast`
                    (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
                     ->_R <GHC.Exception.SomeException>_R
